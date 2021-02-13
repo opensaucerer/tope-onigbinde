@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<!-- Mirrored from soobadina.co.uk/retail-christianity-chude-jideonwo by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Jun 2021 17:59:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e7fb1b89a0",applicationID:"750147145"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1209.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="twitter:card"  content="summary_large_image" />
+      <meta name="twitter:site"  content="@AdobePortfolio" />
+      <meta  property="og:title" content="samuel obadina - Retail Christianity - Chude Jideonwo" />
+      <meta  property="og:image" content="https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/d016bb7e-fb30-44b4-b08c-2e3685fd1e24_car_4x3.png?h=893f5de00e7c27d56e72fbe4d48996e4" />
+        <link rel="icon" href="../pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/f5275206-a1d7-46a5-99ba-4abf3887e2ee_carw_1x1x320e47.png?h=ea6263994f0c2d8fc112ca2bb44a23ce" />
+      <link rel="stylesheet" href="dist/css/main.css" type="text/css" />
+      <link rel="stylesheet" href="../pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/0519e7fb45cca90235e78b9a15e3e7f51620383083dc98.css?h=f11d56473229cdeb4c60ad0be843cb17" type="text/css" />
+    <link rel="canonical" href="retail-christianity-chude-jideonwo.html" />
+      <title>samuel obadina - Retail Christianity - Chude Jideonwo</title>
+    <script type="text/javascript" src="../use.typekit.net/ik/yj0B7OfSAb51TFN6ilss5wtak15Wl4Gv9baTxsCYQICfeTSffHYEBsJzwD9oFDIDWDba529t5QwowhmRwAID52jajRm8wcbkZcmqZQbXwDjhjRJhwhwu5Q9-RbI7OcuoSeNkieZzde8zOcFzdP37O1gkdDJlic88ikolpWgzS1scdhUTdkoRdh?cb=" async onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn('Typekit not loaded.');
+    }
+    "></script>
+</head>
+  <body class="transition-enabled">  <div class='page-background-video page-background-video-with-panel'>
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="close-responsive-click-area js-close-responsive-nav">
+        <div class="close-responsive-button"></div>
+      </div>
+          <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="my-profile.html" >Home</a>
+      </div>
+                <div class="gallery-title"><a href="product.html" >UI/UX</a></div>
+                <div class="gallery-title"><a href="work.html" >Branding</a></div>
+          </nav>
+        <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+          </ul>
+        </div>
+    </div>
+  </div>
+    <header class="site-header js-site-header  js-fixed-nav" data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+        <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="my-profile.html" >Home</a>
+      </div>
+                <div class="gallery-title"><a href="product.html" >UI/UX</a></div>
+                <div class="gallery-title"><a href="work.html" >Branding</a></div>
+        </nav>
+        <div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+          <div class="logo e2e-site-logo-text logo-image  ">
+    <a href="my-profile.html" class="image-normal image-link">
+      <img src="../pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/156ce0a9-d44f-4a77-a87f-058828d65fd4_rwc_19x0x2535x1182x4096ad17.png?h=b3ffcd20c3d669d99cd61c195b5b5baa" alt="samuel obadina">
+    </a>
+          </div>
+        </div>
+        <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+          </ul>
+        </div>
+        <div class="hamburger-click-area js-hamburger">
+          <div class="hamburger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+  <div class="site-wrap cfix js-site-wrap">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+        <main>
+  <div class="page-container" data-context="page.page.container" data-hover-hint="pageContainer">
+    <section class="page standard-modules">
+        <header class="page-header content" data-context="pages" data-identity="id:p6024f3a1960d140d1760d6f0b4d924f35fc834a18f9f8839112ec" data-hover-hint="pageHeader" data-hover-hint-id="p6024f3a1960d140d1760d6f0b4d924f35fc834a18f9f8839112ec">
+            <h1 class="title preserve-whitespace e2e-site-logo-text">Retail Christianity - Chude Jideonwo</h1>
+            <p class="description"></p>
+        </header>
+      <div class="page-content js-page-content" data-context="pages" data-identity="id:p6024f3a1960d140d1760d6f0b4d924f35fc834a18f9f8839112ec">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>IT’S ALWAYS EXCITING TO GIVE IMAGERIES TO WORDS. I EFFECTIVELY EXPRESSED THIS PROJECT TO GET THE ATTENTION OF THE AUDIENCE AND ALSO A COLOUR CHOICE THAT’S DATED TO GRAB  UNUSUAL COLOUR ATTENTION. <br></div></div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module media_collection project-module-media_collection" data-id="m6024f3f27cf38f159e21305f310b7d897691720963d5286bc9035"  style="padding-top: px;
+padding-bottom: px;
+">
+  <div class="grid--main js-grid-main" data-grid-max-images="  2
+">
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="260" style="width:260px; flex-grow:260;" data-width="1920" data-height="1920">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4555bddf-9519-4bcd-ba73-b7a00deb1234_rw_1920.png?h=a27182eabc334fdd412eabea7e8ba59f" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4555bddf-9519-4bcd-ba73-b7a00deb1234_rw_600.png?h=ff5cdcd6fc03f4767747f11637c36107 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4555bddf-9519-4bcd-ba73-b7a00deb1234_rw_1200.png?h=efa82e7ddc349d9c27d99d8c1ac02251 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4555bddf-9519-4bcd-ba73-b7a00deb1234_rw_1920.png?h=a27182eabc334fdd412eabea7e8ba59f 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4555bddf-9519-4bcd-ba73-b7a00deb1234_rw_1920.png?h=a27182eabc334fdd412eabea7e8ba59f"
+        data-srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4555bddf-9519-4bcd-ba73-b7a00deb1234_rw_600.png?h=ff5cdcd6fc03f4767747f11637c36107 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4555bddf-9519-4bcd-ba73-b7a00deb1234_rw_1200.png?h=efa82e7ddc349d9c27d99d8c1ac02251 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4555bddf-9519-4bcd-ba73-b7a00deb1234_rw_1920.png?h=a27182eabc334fdd412eabea7e8ba59f 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:100%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="260.11049723757" style="width:260.11049723757px; flex-grow:260.11049723757;" data-width="1920" data-height="1919">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ec24849a-b02d-41b6-8532-260067e7aee8_rw_1920.png?h=428f8d279530eefc77d2d1cb91de95df" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ec24849a-b02d-41b6-8532-260067e7aee8_rw_600.png?h=c546b4e178bc638b3c6bf4c16cf22f40 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ec24849a-b02d-41b6-8532-260067e7aee8_rw_1200.png?h=8cfdc8cf377429118aea9243b20e715d 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ec24849a-b02d-41b6-8532-260067e7aee8_rw_1920.png?h=428f8d279530eefc77d2d1cb91de95df 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ec24849a-b02d-41b6-8532-260067e7aee8_rw_1920.png?h=428f8d279530eefc77d2d1cb91de95df"
+        data-srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ec24849a-b02d-41b6-8532-260067e7aee8_rw_600.png?h=c546b4e178bc638b3c6bf4c16cf22f40 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ec24849a-b02d-41b6-8532-260067e7aee8_rw_1200.png?h=8cfdc8cf377429118aea9243b20e715d 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ec24849a-b02d-41b6-8532-260067e7aee8_rw_1920.png?h=428f8d279530eefc77d2d1cb91de95df 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:99.957519116398%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="257.79005524862" style="width:257.79005524862px; flex-grow:257.79005524862;" data-width="1920" data-height="1936">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9db26df7-e566-4c04-be78-0c3dac95223f_rw_1920.png?h=358825d1930455d1d88c85ae6881114b" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9db26df7-e566-4c04-be78-0c3dac95223f_rw_600.png?h=0a39d18f4de8177694c32e1307f2bd87 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9db26df7-e566-4c04-be78-0c3dac95223f_rw_1200.png?h=f992c8d00060cd19d2eb1bb7d990adf9 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9db26df7-e566-4c04-be78-0c3dac95223f_rw_1920.png?h=358825d1930455d1d88c85ae6881114b 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9db26df7-e566-4c04-be78-0c3dac95223f_rw_1920.png?h=358825d1930455d1d88c85ae6881114b"
+        data-srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9db26df7-e566-4c04-be78-0c3dac95223f_rw_600.png?h=0a39d18f4de8177694c32e1307f2bd87 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9db26df7-e566-4c04-be78-0c3dac95223f_rw_1200.png?h=f992c8d00060cd19d2eb1bb7d990adf9 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9db26df7-e566-4c04-be78-0c3dac95223f_rw_1920.png?h=358825d1930455d1d88c85ae6881114b 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:100.85726532362%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="259.88954970263" style="width:259.88954970263px; flex-grow:259.88954970263;" data-width="1920" data-height="1920">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/842b4eb4-e553-47dc-a307-c7289872e425_rw_1920.png?h=b19d79b1750104008bc70af000bae259" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/842b4eb4-e553-47dc-a307-c7289872e425_rw_600.png?h=5e1366d97c50115576a9dd062b5ff11d 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/842b4eb4-e553-47dc-a307-c7289872e425_rw_1200.png?h=655fd05d91dffdd7f35fff34c702f628 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/842b4eb4-e553-47dc-a307-c7289872e425_rw_1920.png?h=b19d79b1750104008bc70af000bae259 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/842b4eb4-e553-47dc-a307-c7289872e425_rw_1920.png?h=b19d79b1750104008bc70af000bae259"
+        data-srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/842b4eb4-e553-47dc-a307-c7289872e425_rw_600.png?h=5e1366d97c50115576a9dd062b5ff11d 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/842b4eb4-e553-47dc-a307-c7289872e425_rw_1200.png?h=655fd05d91dffdd7f35fff34c702f628 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/842b4eb4-e553-47dc-a307-c7289872e425_rw_1920.png?h=b19d79b1750104008bc70af000bae259 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:100.04249893753%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="260" style="width:260px; flex-grow:260;" data-width="1920" data-height="1920">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/580aa5c1-e50f-41d2-b77b-055e5179e47f_rw_1920.png?h=1843881d210db4a7bd40cfb4e29bb7e9" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/580aa5c1-e50f-41d2-b77b-055e5179e47f_rw_600.png?h=114e5d78632bd7c9dcabbd4c10463a4a 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/580aa5c1-e50f-41d2-b77b-055e5179e47f_rw_1200.png?h=21f93e5487304193137e1834ad2cf917 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/580aa5c1-e50f-41d2-b77b-055e5179e47f_rw_1920.png?h=1843881d210db4a7bd40cfb4e29bb7e9 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/580aa5c1-e50f-41d2-b77b-055e5179e47f_rw_1920.png?h=1843881d210db4a7bd40cfb4e29bb7e9"
+        data-srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/580aa5c1-e50f-41d2-b77b-055e5179e47f_rw_600.png?h=114e5d78632bd7c9dcabbd4c10463a4a 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/580aa5c1-e50f-41d2-b77b-055e5179e47f_rw_1200.png?h=21f93e5487304193137e1834ad2cf917 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/580aa5c1-e50f-41d2-b77b-055e5179e47f_rw_1920.png?h=1843881d210db4a7bd40cfb4e29bb7e9 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:100%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="257.68054375531" style="width:257.68054375531px; flex-grow:257.68054375531;" data-width="1920" data-height="1937">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/24f27306-0ce5-47be-8b07-dab1501f6579_rw_1920.png?h=cbfbe66187e248bd92515a3dfd2b63d9" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/24f27306-0ce5-47be-8b07-dab1501f6579_rw_600.png?h=0f46ac132c9121c0057ce819db992c95 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/24f27306-0ce5-47be-8b07-dab1501f6579_rw_1200.png?h=059ef925fb7a11e312616fbb88602881 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/24f27306-0ce5-47be-8b07-dab1501f6579_rw_1920.png?h=cbfbe66187e248bd92515a3dfd2b63d9 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/24f27306-0ce5-47be-8b07-dab1501f6579_rw_1920.png?h=cbfbe66187e248bd92515a3dfd2b63d9"
+        data-srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/24f27306-0ce5-47be-8b07-dab1501f6579_rw_600.png?h=0f46ac132c9121c0057ce819db992c95 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/24f27306-0ce5-47be-8b07-dab1501f6579_rw_1200.png?h=059ef925fb7a11e312616fbb88602881 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/24f27306-0ce5-47be-8b07-dab1501f6579_rw_1920.png?h=cbfbe66187e248bd92515a3dfd2b63d9 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:100.9001285898%;"></span>
+    </div>
+    <div class="js-grid-spacer"></div>
+  </div>
+</div>
+
+              
+              
+          </div>
+        </div>
+      </div>
+    </section>
+          <section class="other-projects" data-context="page.page.other_pages" data-hover-hint="otherPages">
+            <div class="title-wrapper">
+              <div class="title-container">
+                  <h3 class="other-projects-title preserve-whitespace">You may also like</h3>
+              </div>
+            </div>
+            <div class="project-covers">
+                  <a class="project-cover js-project-cover-touch hold-space" href="octagon-1.html" data-context="pages" data-identity="id:p6024d1f1a5f015e5ea25707223357f77217ae7d14692a0739e969">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/aa141c22-8c37-4e4d-aa53-52ed9e2ffbf3_carw_4x3x32a163.png?h=bdb7a8613b154f078b7d5bcfe58bceff"
+              data-src="../pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/aa141c22-8c37-4e4d-aa53-52ed9e2ffbf3_car_4x33a3e.png?h=249b793f706c141ea4466f4c1dba28e3"
+              data-srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/aa141c22-8c37-4e4d-aa53-52ed9e2ffbf3_carw_4x3x640.png?h=0810187c3fbd21482b7610551814ade6 640w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/aa141c22-8c37-4e4d-aa53-52ed9e2ffbf3_carw_4x3x1280.png?h=28013dd966e3c06d56e84f9901a7956d 1280w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/aa141c22-8c37-4e4d-aa53-52ed9e2ffbf3_carw_4x3x1366.png?h=93ef926e0b9968b26507c3ab03fdbe5e 1366w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/aa141c22-8c37-4e4d-aa53-52ed9e2ffbf3_carw_4x3x1920.png?h=d0fca634a3875f53131bc02940aedd41 1920w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/aa141c22-8c37-4e4d-aa53-52ed9e2ffbf3_carw_4x3x2560.png?h=373d215d644a1fa913a1e2c51a452200 2560w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/aa141c22-8c37-4e4d-aa53-52ed9e2ffbf3_carw_4x3x5120.png?h=c7ae2f4da6edccbbf3dc7e446bd6340b 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1500px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Octagon Logo</div>
+                              <div class="date">2019</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="gemzone-fourthcanvas.html" data-context="pages" data-identity="id:p6024eb88237e360f0ae1d006c65d0dfac002e894c2374de4a7227">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/47c49736-f9d0-45ba-bcee-68be3b50ba32_carw_4x3x329e3e.png?h=08e171f470d1933bd4d44986fcec818f"
+              data-src="../pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/47c49736-f9d0-45ba-bcee-68be3b50ba32_car_4x3cbae.png?h=90f8129a1481cb95a0ff42ddf55d655c"
+              data-srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/47c49736-f9d0-45ba-bcee-68be3b50ba32_carw_4x3x640.png?h=8c5c59f0d6bec31ba770986e352effc1 640w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/47c49736-f9d0-45ba-bcee-68be3b50ba32_carw_4x3x1280.png?h=bd4765641a9a1d26ad9cb4e20c66c7dd 1280w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/47c49736-f9d0-45ba-bcee-68be3b50ba32_carw_4x3x1366.png?h=e374d4b2c970a2f66527e3153afa71ec 1366w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/47c49736-f9d0-45ba-bcee-68be3b50ba32_carw_4x3x1920.png?h=3a14cf7c644ec892a486311bc10ba1f8 1920w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/47c49736-f9d0-45ba-bcee-68be3b50ba32_carw_4x3x2560.png?h=6741779dfcd8a2c8f7e209923ad22ca9 2560w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/47c49736-f9d0-45ba-bcee-68be3b50ba32_carw_4x3x5120.png?h=f250b3ee6fb2ccf6511959383985cec7 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1500px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Gemzone - FourthCanvas</div>
+                              <div class="date">2021</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="feathers.html" data-context="pages" data-identity="id:p602468fb66b20e7c20746e2c3f4e8c8b102c269c9a35c8fd44ff9">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1f4a2a9b-36b2-4e27-a8d3-58ea049407a8_carw_4x3x3205da.png?h=533ff258a6cbdf13372a9422b05e1fcd"
+              data-src="../pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1f4a2a9b-36b2-4e27-a8d3-58ea049407a8_car_4x3e8f8.png?h=c23b41479ee85141f085a9bddbd6eaa0"
+              data-srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1f4a2a9b-36b2-4e27-a8d3-58ea049407a8_carw_4x3x640.png?h=bdfe1be9a5244a866a5c494e0939891f 640w, https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1f4a2a9b-36b2-4e27-a8d3-58ea049407a8_carw_4x3x1280.png?h=5a6d853bc5a9e891a42cf2d265adb25b 1280w, https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1f4a2a9b-36b2-4e27-a8d3-58ea049407a8_carw_4x3x1366.png?h=a32a542d86bab612154dbe5f99f0cf8c 1366w, https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1f4a2a9b-36b2-4e27-a8d3-58ea049407a8_carw_4x3x1920.png?h=2f65e1259a524e4af81fc12aa68bce2b 1920w, https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1f4a2a9b-36b2-4e27-a8d3-58ea049407a8_carw_4x3x2560.png?h=986814c840af882b1bbfbb213217791c 2560w, https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1f4a2a9b-36b2-4e27-a8d3-58ea049407a8_carw_4x3x5120.png?h=592ea6d355d3c1ef247af3f9eef2fef1 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1500px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Feathers Rebrand Case Study</div>
+                              <div class="date">2018</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="dress-a-girl.html" data-context="pages" data-identity="id:p6024d602e91d3e1f1c22bcf9fcd4e63f5dc9bc78aaae4c0fec466">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/315184b8-4997-426e-94c2-f45917884846_rwc_409x457x812x609x32f0a1.png?h=96e134e0afc7d90ce37258057474dd51"
+              data-src="../pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/315184b8-4997-426e-94c2-f45917884846_rwc_409x457x812x609x812c78c.png?h=0db9bd5a08e8e95423934e9b91780825"
+              data-srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/315184b8-4997-426e-94c2-f45917884846_rwc_409x457x812x609x640.png?h=755c79b002dbefc5b5ea9a537e6d482b 640w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/315184b8-4997-426e-94c2-f45917884846_rwc_409x457x812x609x1280.png?h=ab622ef46fa8048a52f42a7ee7fb3eaa 1280w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/315184b8-4997-426e-94c2-f45917884846_rwc_409x457x812x609x1366.png?h=3d98cdf6849159ff6a48bd18cb7c0f0d 1366w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/315184b8-4997-426e-94c2-f45917884846_rwc_409x457x812x609x1920.png?h=dc85b16f191bfe0ece2315a937a05ab2 1920w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/315184b8-4997-426e-94c2-f45917884846_rwc_409x457x812x609x812.png?h=0db9bd5a08e8e95423934e9b91780825 2560w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/315184b8-4997-426e-94c2-f45917884846_rwc_409x457x812x609x812.png?h=0db9bd5a08e8e95423934e9b91780825 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1500px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Dress A Girl</div>
+                              <div class="date">2018</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space has-rollover" href="joyinc-campaign.html" data-context="pages" data-identity="id:p6024dcfc23d754e8ce245e08a2fd17724058fa3922a258a739135">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-rollover">
+
+            <img
+              class="cover__img js-lazy"
+              src="../pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9055f3cd-5683-4e62-95ec-3db531883963_carw_4x3x32a05c.png?h=ec2d757f5d19577fcced8f09297958ae"
+              data-src="../pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9055f3cd-5683-4e62-95ec-3db531883963_car_4x311ea.png?h=9c588460aa1526b9d145d215cb1a0157"
+              data-srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9055f3cd-5683-4e62-95ec-3db531883963_carw_4x3x640.png?h=65e8c21f8e8e9fcca68d15ceb7a128df 640w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9055f3cd-5683-4e62-95ec-3db531883963_carw_4x3x1280.png?h=ce9c8c9485421f543074b6a75b82bd15 1280w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9055f3cd-5683-4e62-95ec-3db531883963_carw_4x3x1366.png?h=b2ed688f2e603146a4b385c963957579 1366w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9055f3cd-5683-4e62-95ec-3db531883963_carw_4x3x1920.png?h=e693ad0da0d92c619758e0d0e1987b57 1920w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9055f3cd-5683-4e62-95ec-3db531883963_carw_4x3x2560.png?h=05884b1947d4af05a9fcb89740971eea 2560w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/9055f3cd-5683-4e62-95ec-3db531883963_carw_4x3x5120.png?h=d278d64bb76cffc0a03da8c3c85557ac 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1500px / 3)"
+            >
+                                      </div>
+                            <div class="cover cover-normal has-rollover">
+
+            <img
+              class="cover__img js-lazy"
+              src="../pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/fd042a0a-e89c-46d5-992c-0119e761a77d_carw_4x3x3298a9.png?h=b041f71217aadcb77b583c04c684a1eb"
+              data-src="../pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/fd042a0a-e89c-46d5-992c-0119e761a77d_car_4x329da.png?h=5a96e3ba11a5b1ee273e6e4c5a1e599e"
+              data-srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/fd042a0a-e89c-46d5-992c-0119e761a77d_carw_4x3x640.png?h=2ecdeb6afe1b83c7e89b8c4e911a9d8f 640w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/fd042a0a-e89c-46d5-992c-0119e761a77d_carw_4x3x1280.png?h=01b9bda97249d88f56c0857d3021a426 1280w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/fd042a0a-e89c-46d5-992c-0119e761a77d_carw_4x3x1366.png?h=dfda1d3ba5a5d688217c9648b1d1d6e1 1366w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/fd042a0a-e89c-46d5-992c-0119e761a77d_carw_4x3x1920.png?h=53dfbad413284d329d1359cb9fcb17af 1920w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/fd042a0a-e89c-46d5-992c-0119e761a77d_carw_4x3x2560.png?h=4b9aaa29e4a1b22d0f3e7c9fea00f6e2 2560w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/fd042a0a-e89c-46d5-992c-0119e761a77d_carw_4x3x5120.png?h=c360edfa5ca4c7894ee3f2fd05f358da 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1500px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Joy.inc Campaign</div>
+                              <div class="date">2017</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+          </section>
+        <section class="back-to-top" data-hover-hint="backToTop">
+          <a href="#"><span class="arrow">&uarr;</span><span class="preserve-whitespace">Back to Top</span></a>
+        </section>
+        <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+          <g>
+            <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+              c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+              c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+              c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+              c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+              c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+              c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"/>
+          </g>
+          </svg>
+        </a>
+  </div>
+              <footer class="site-footer" data-hover-hint="footer">
+                <div class="footer-text">
+                  email: soobadina@gmail.com
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":36,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p6024f3a1960d140d1760d6f0b4d924f35fc834a18f9f8839112ec","theme":{"name":"marta\/marina"},"pageTransition":true,"linkTransition":true,"disableDownload":false,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false}};</script>
+  <script type="text/javascript" src="site/translationscb21?cb="></script>
+  <script type="text/javascript" src="dist/js/maincb21.js?cb="></script>
+
+<!-- Mirrored from soobadina.co.uk/retail-christianity-chude-jideonwo by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Jun 2021 17:59:56 GMT -->
+</html>

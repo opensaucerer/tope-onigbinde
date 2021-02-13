@@ -1,0 +1,426 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<!-- Mirrored from soobadina.co.uk/peer-group by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Jun 2021 17:58:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e7fb1b89a0",applicationID:"750147145"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1209.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="twitter:card"  content="summary_large_image" />
+      <meta name="twitter:site"  content="@AdobePortfolio" />
+      <meta  property="og:title" content="samuel obadina - Peer Group – Redefining Peer to peer learning" />
+      <meta  property="og:image" content="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1fba8ae9-41d0-4f3f-8dd0-74a1f644757c_rwc_283x0x1354x1016x1354.png?h=99b61c08563ee7ba4e99c18ce2e4c490" />
+        <link rel="icon" href="../pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/f5275206-a1d7-46a5-99ba-4abf3887e2ee_carw_1x1x320e47.png?h=ea6263994f0c2d8fc112ca2bb44a23ce" />
+      <link rel="stylesheet" href="dist/css/main.css" type="text/css" />
+      <link rel="stylesheet" href="../pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/f80d043cacef030e0feb7d8841a546f9162038308309c0.css?h=f2320216399470e1ba13137be0ddc983" type="text/css" />
+    <link rel="canonical" href="peer-group.html" />
+      <title>samuel obadina - Peer Group – Redefining Peer to peer learning</title>
+    <script type="text/javascript" src="../use.typekit.net/ik/yj0B7OfSAb51TFN6ilss5wtak15Wl4Gv9baTxsCYQICfeTSffHYEBsJzwD9oFDIDWDba529t5QwowhmRwAID52jajRm8wcbkZcmqZQbXwDjhjRJhwhwu5Q9-RbI7OcuoSeNkieZzde8zOcFzdP37O1gkdDJlic88ikolpWgzS1scdhUTdkoRdh?cb=" async onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn('Typekit not loaded.');
+    }
+    "></script>
+</head>
+  <body class="transition-enabled">  <div class='page-background-video page-background-video-with-panel'>
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="close-responsive-click-area js-close-responsive-nav">
+        <div class="close-responsive-button"></div>
+      </div>
+          <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="my-profile.html" >Home</a>
+      </div>
+                <div class="gallery-title"><a href="product.html" >UI/UX</a></div>
+                <div class="gallery-title"><a href="work.html" >Branding</a></div>
+          </nav>
+        <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+          </ul>
+        </div>
+    </div>
+  </div>
+    <header class="site-header js-site-header  js-fixed-nav" data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+        <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="my-profile.html" >Home</a>
+      </div>
+                <div class="gallery-title"><a href="product.html" >UI/UX</a></div>
+                <div class="gallery-title"><a href="work.html" >Branding</a></div>
+        </nav>
+        <div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+          <div class="logo e2e-site-logo-text logo-image  ">
+    <a href="my-profile.html" class="image-normal image-link">
+      <img src="../pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/156ce0a9-d44f-4a77-a87f-058828d65fd4_rwc_19x0x2535x1182x4096ad17.png?h=b3ffcd20c3d669d99cd61c195b5b5baa" alt="samuel obadina">
+    </a>
+          </div>
+        </div>
+        <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+          </ul>
+        </div>
+        <div class="hamburger-click-area js-hamburger">
+          <div class="hamburger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+  <div class="site-wrap cfix js-site-wrap">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+        <main>
+  <div class="page-container" data-context="page.page.container" data-hover-hint="pageContainer">
+    <section class="page standard-modules">
+      <div class="page-content js-page-content" data-context="pages" data-identity="id:p6091365287bc413e49ab4278d10f93d5192c5ac254a97d213168b">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module media_collection project-module-media_collection" data-id="m60913683e7facc6d4513c9bee75201d62e8bba41c575b3e2c25ff"  style="padding-top: 0px;
+padding-bottom: 0px;
+">
+  <div class="grid--main js-grid-main" data-grid-max-images="  1
+">
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="491.33858267717" style="width:491.33858267717px; flex-grow:491.33858267717;" data-width="1920" data-height="1016">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1ae7ba47-c736-4894-a709-c93bd286bab3_rw_1920.png?h=db07eccccadf42205fdf34cc84ff5809" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1ae7ba47-c736-4894-a709-c93bd286bab3_rw_600.png?h=5e06ba134fc20880bde77d40e0a31404 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1ae7ba47-c736-4894-a709-c93bd286bab3_rw_1200.png?h=3b785408c446042977c74b072a7dd5b4 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1ae7ba47-c736-4894-a709-c93bd286bab3_rw_1920.png?h=db07eccccadf42205fdf34cc84ff5809 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1ae7ba47-c736-4894-a709-c93bd286bab3_rw_1920.png?h=db07eccccadf42205fdf34cc84ff5809"
+        data-srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1ae7ba47-c736-4894-a709-c93bd286bab3_rw_600.png?h=5e06ba134fc20880bde77d40e0a31404 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1ae7ba47-c736-4894-a709-c93bd286bab3_rw_1200.png?h=3b785408c446042977c74b072a7dd5b4 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/1ae7ba47-c736-4894-a709-c93bd286bab3_rw_1920.png?h=db07eccccadf42205fdf34cc84ff5809 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:52.916666666667%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="386.57718120805" style="width:386.57718120805px; flex-grow:386.57718120805;" data-width="1920" data-height="1291">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/e86c787d-4bd8-4726-9ecd-65c6ec30341a_rw_1920.png?h=868f0daa0b2b25edecff170bad45464f" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/e86c787d-4bd8-4726-9ecd-65c6ec30341a_rw_600.png?h=4ce0b504927e0fa53d59457ca1fc3c0a 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/e86c787d-4bd8-4726-9ecd-65c6ec30341a_rw_1200.png?h=52c208e84b403efe421552f1b31a752c 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/e86c787d-4bd8-4726-9ecd-65c6ec30341a_rw_1920.png?h=868f0daa0b2b25edecff170bad45464f 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/e86c787d-4bd8-4726-9ecd-65c6ec30341a_rw_1920.png?h=868f0daa0b2b25edecff170bad45464f"
+        data-srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/e86c787d-4bd8-4726-9ecd-65c6ec30341a_rw_600.png?h=4ce0b504927e0fa53d59457ca1fc3c0a 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/e86c787d-4bd8-4726-9ecd-65c6ec30341a_rw_1200.png?h=52c208e84b403efe421552f1b31a752c 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/e86c787d-4bd8-4726-9ecd-65c6ec30341a_rw_1920.png?h=868f0daa0b2b25edecff170bad45464f 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:67.256944444444%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="428.37528604119" style="width:428.37528604119px; flex-grow:428.37528604119;" data-width="1920" data-height="1165">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/52f7a23f-c00b-4b56-ba03-0c0cd307d776_rw_1920.png?h=2fe4bb1ddfbf633b3095841c7edd6ebd" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/52f7a23f-c00b-4b56-ba03-0c0cd307d776_rw_600.png?h=c6e6a705d6ad5f2fce9b41d5591fc79f 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/52f7a23f-c00b-4b56-ba03-0c0cd307d776_rw_1200.png?h=3953555bbf03f6babef471532811e8f2 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/52f7a23f-c00b-4b56-ba03-0c0cd307d776_rw_1920.png?h=2fe4bb1ddfbf633b3095841c7edd6ebd 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/52f7a23f-c00b-4b56-ba03-0c0cd307d776_rw_1920.png?h=2fe4bb1ddfbf633b3095841c7edd6ebd"
+        data-srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/52f7a23f-c00b-4b56-ba03-0c0cd307d776_rw_600.png?h=c6e6a705d6ad5f2fce9b41d5591fc79f 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/52f7a23f-c00b-4b56-ba03-0c0cd307d776_rw_1200.png?h=3953555bbf03f6babef471532811e8f2 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/52f7a23f-c00b-4b56-ba03-0c0cd307d776_rw_1920.png?h=2fe4bb1ddfbf633b3095841c7edd6ebd 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:60.694444444444%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="394.93670886076" style="width:394.93670886076px; flex-grow:394.93670886076;" data-width="1920" data-height="1264">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/7b68b079-3350-4b88-9c90-34af2cb02c14_rw_1920.png?h=92861020935b14155a5529086fee3b53" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/7b68b079-3350-4b88-9c90-34af2cb02c14_rw_600.png?h=7f94d8745a925fb2e247e201469ea310 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/7b68b079-3350-4b88-9c90-34af2cb02c14_rw_1200.png?h=3ec94ead59ca0969afa0830d7747feb5 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/7b68b079-3350-4b88-9c90-34af2cb02c14_rw_1920.png?h=92861020935b14155a5529086fee3b53 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/7b68b079-3350-4b88-9c90-34af2cb02c14_rw_1920.png?h=92861020935b14155a5529086fee3b53"
+        data-srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/7b68b079-3350-4b88-9c90-34af2cb02c14_rw_600.png?h=7f94d8745a925fb2e247e201469ea310 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/7b68b079-3350-4b88-9c90-34af2cb02c14_rw_1200.png?h=3ec94ead59ca0969afa0830d7747feb5 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/7b68b079-3350-4b88-9c90-34af2cb02c14_rw_1920.png?h=92861020935b14155a5529086fee3b53 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:65.833333333333%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="460.23355869699" style="width:460.23355869699px; flex-grow:460.23355869699;" data-width="1920" data-height="1084">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4afd3a72-4cd8-4705-ba91-605de3e37c43_rw_1920.png?h=50d86bdecfd16a7a14031136c9409dee" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4afd3a72-4cd8-4705-ba91-605de3e37c43_rw_600.png?h=3c97dfe386ce207b4fb31b59898d5850 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4afd3a72-4cd8-4705-ba91-605de3e37c43_rw_1200.png?h=b4e7d9b379b835c5467b8d2ce49de4a9 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4afd3a72-4cd8-4705-ba91-605de3e37c43_rw_1920.png?h=50d86bdecfd16a7a14031136c9409dee 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4afd3a72-4cd8-4705-ba91-605de3e37c43_rw_1920.png?h=50d86bdecfd16a7a14031136c9409dee"
+        data-srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4afd3a72-4cd8-4705-ba91-605de3e37c43_rw_600.png?h=3c97dfe386ce207b4fb31b59898d5850 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4afd3a72-4cd8-4705-ba91-605de3e37c43_rw_1200.png?h=b4e7d9b379b835c5467b8d2ce49de4a9 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/4afd3a72-4cd8-4705-ba91-605de3e37c43_rw_1920.png?h=50d86bdecfd16a7a14031136c9409dee 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:56.493055555556%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="324.15584415584" style="width:324.15584415584px; flex-grow:324.15584415584;" data-width="1920" data-height="1540">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/2a39e327-efd4-45e2-bfa0-51a67147a0da_rw_1920.png?h=e5ffe7cb5e8d06862617fc90571d915e" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/2a39e327-efd4-45e2-bfa0-51a67147a0da_rw_600.png?h=5b08c62c2051d8fc46eb715b39e89d80 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/2a39e327-efd4-45e2-bfa0-51a67147a0da_rw_1200.png?h=cd3de117d1774c48062814024e66e061 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/2a39e327-efd4-45e2-bfa0-51a67147a0da_rw_1920.png?h=e5ffe7cb5e8d06862617fc90571d915e 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/2a39e327-efd4-45e2-bfa0-51a67147a0da_rw_1920.png?h=e5ffe7cb5e8d06862617fc90571d915e"
+        data-srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/2a39e327-efd4-45e2-bfa0-51a67147a0da_rw_600.png?h=5b08c62c2051d8fc46eb715b39e89d80 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/2a39e327-efd4-45e2-bfa0-51a67147a0da_rw_1200.png?h=cd3de117d1774c48062814024e66e061 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/2a39e327-efd4-45e2-bfa0-51a67147a0da_rw_1920.png?h=e5ffe7cb5e8d06862617fc90571d915e 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:80.208333333333%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="360.34648700674" style="width:360.34648700674px; flex-grow:360.34648700674;" data-width="1920" data-height="1385">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/efdcb3d8-d392-4028-924f-2efe8f12b28c_rw_1920.png?h=1965b65b926ae6a587aec66056ee3b22" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/efdcb3d8-d392-4028-924f-2efe8f12b28c_rw_600.png?h=eb6105ec1cc0ab77ad5d111e822ef429 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/efdcb3d8-d392-4028-924f-2efe8f12b28c_rw_1200.png?h=82af5fa3238d54e50ab894b6cbe4027f 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/efdcb3d8-d392-4028-924f-2efe8f12b28c_rw_1920.png?h=1965b65b926ae6a587aec66056ee3b22 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/efdcb3d8-d392-4028-924f-2efe8f12b28c_rw_1920.png?h=1965b65b926ae6a587aec66056ee3b22"
+        data-srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/efdcb3d8-d392-4028-924f-2efe8f12b28c_rw_600.png?h=eb6105ec1cc0ab77ad5d111e822ef429 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/efdcb3d8-d392-4028-924f-2efe8f12b28c_rw_1200.png?h=82af5fa3238d54e50ab894b6cbe4027f 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/efdcb3d8-d392-4028-924f-2efe8f12b28c_rw_1920.png?h=1965b65b926ae6a587aec66056ee3b22 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:72.152777777778%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="345.38745387454" style="width:345.38745387454px; flex-grow:345.38745387454;" data-width="1920" data-height="1445">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/905efe4c-297c-469b-99ee-e4c4074bd4d8_rw_1920.png?h=3ced876e3446aeec740ee2cb62a03b43" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/905efe4c-297c-469b-99ee-e4c4074bd4d8_rw_600.png?h=3385905ccab57f4ab09123eec6a2a802 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/905efe4c-297c-469b-99ee-e4c4074bd4d8_rw_1200.png?h=a350224e7d6d565bfc8c1fd4ace87072 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/905efe4c-297c-469b-99ee-e4c4074bd4d8_rw_1920.png?h=3ced876e3446aeec740ee2cb62a03b43 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/905efe4c-297c-469b-99ee-e4c4074bd4d8_rw_1920.png?h=3ced876e3446aeec740ee2cb62a03b43"
+        data-srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/905efe4c-297c-469b-99ee-e4c4074bd4d8_rw_600.png?h=3385905ccab57f4ab09123eec6a2a802 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/905efe4c-297c-469b-99ee-e4c4074bd4d8_rw_1200.png?h=a350224e7d6d565bfc8c1fd4ace87072 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/905efe4c-297c-469b-99ee-e4c4074bd4d8_rw_1920.png?h=3ced876e3446aeec740ee2cb62a03b43 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:75.277777777778%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="265.81469648562" style="width:265.81469648562px; flex-grow:265.81469648562;" data-width="1920" data-height="1878">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5f9aa923-fd67-456d-a023-e0374358dda3_rw_1920.png?h=0cceed4b3429ebb494e35b8cb725954a" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5f9aa923-fd67-456d-a023-e0374358dda3_rw_600.png?h=567d5ad6c2f1fbb127823005a355709e 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5f9aa923-fd67-456d-a023-e0374358dda3_rw_1200.png?h=9a1e8117ca7a41a0b9af581471994d24 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5f9aa923-fd67-456d-a023-e0374358dda3_rw_1920.png?h=0cceed4b3429ebb494e35b8cb725954a 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5f9aa923-fd67-456d-a023-e0374358dda3_rw_1920.png?h=0cceed4b3429ebb494e35b8cb725954a"
+        data-srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5f9aa923-fd67-456d-a023-e0374358dda3_rw_600.png?h=567d5ad6c2f1fbb127823005a355709e 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5f9aa923-fd67-456d-a023-e0374358dda3_rw_1200.png?h=9a1e8117ca7a41a0b9af581471994d24 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5f9aa923-fd67-456d-a023-e0374358dda3_rw_1920.png?h=0cceed4b3429ebb494e35b8cb725954a 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:97.8125%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="534.85714285714" style="width:534.85714285714px; flex-grow:534.85714285714;" data-width="1920" data-height="933">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ee1d6b4f-5bd3-4c7c-9584-5c33bd705ef7_rw_1920.png?h=622fc677cfe8f5dba0f55b3df0475781" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ee1d6b4f-5bd3-4c7c-9584-5c33bd705ef7_rw_600.png?h=10c2e769ef6a735281bee96bb8f88036 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ee1d6b4f-5bd3-4c7c-9584-5c33bd705ef7_rw_1200.png?h=92fa59e3c5f6a00298bbf5e969d7113e 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ee1d6b4f-5bd3-4c7c-9584-5c33bd705ef7_rw_1920.png?h=622fc677cfe8f5dba0f55b3df0475781 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ee1d6b4f-5bd3-4c7c-9584-5c33bd705ef7_rw_1920.png?h=622fc677cfe8f5dba0f55b3df0475781"
+        data-srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ee1d6b4f-5bd3-4c7c-9584-5c33bd705ef7_rw_600.png?h=10c2e769ef6a735281bee96bb8f88036 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ee1d6b4f-5bd3-4c7c-9584-5c33bd705ef7_rw_1200.png?h=92fa59e3c5f6a00298bbf5e969d7113e 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/ee1d6b4f-5bd3-4c7c-9584-5c33bd705ef7_rw_1920.png?h=622fc677cfe8f5dba0f55b3df0475781 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:48.611111111111%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="270.715835141" style="width:270.715835141px; flex-grow:270.715835141;" data-width="1920" data-height="1844">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/71275723-ab7e-487d-9b35-875de244ddda_rw_1920.png?h=a5180451c348d6c26d597e35ab9f3d7a" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/71275723-ab7e-487d-9b35-875de244ddda_rw_600.png?h=3c0cd010a7d7702bfe4e5889af6d81db 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/71275723-ab7e-487d-9b35-875de244ddda_rw_1200.png?h=1745bd33903fe4949a2a115538cd8796 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/71275723-ab7e-487d-9b35-875de244ddda_rw_1920.png?h=a5180451c348d6c26d597e35ab9f3d7a 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/71275723-ab7e-487d-9b35-875de244ddda_rw_1920.png?h=a5180451c348d6c26d597e35ab9f3d7a"
+        data-srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/71275723-ab7e-487d-9b35-875de244ddda_rw_600.png?h=3c0cd010a7d7702bfe4e5889af6d81db 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/71275723-ab7e-487d-9b35-875de244ddda_rw_1200.png?h=1745bd33903fe4949a2a115538cd8796 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/71275723-ab7e-487d-9b35-875de244ddda_rw_1920.png?h=a5180451c348d6c26d597e35ab9f3d7a 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:96.041666666667%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="139.91031390135" style="width:139.91031390135px; flex-grow:139.91031390135;" data-width="1920" data-height="3568">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/bac8be28-2eb0-4b8e-860b-9e4f30618edc_rw_1920.png?h=f653e72a12fd903e8d93d9aea4ec0eb2" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/bac8be28-2eb0-4b8e-860b-9e4f30618edc_rw_600.png?h=8a7b9e1c1281580b727b5030cc8ca43f 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/bac8be28-2eb0-4b8e-860b-9e4f30618edc_rw_1200.png?h=153d03bf6b91931156066076fcc15aad 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/bac8be28-2eb0-4b8e-860b-9e4f30618edc_rw_1920.png?h=f653e72a12fd903e8d93d9aea4ec0eb2 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/bac8be28-2eb0-4b8e-860b-9e4f30618edc_rw_1920.png?h=f653e72a12fd903e8d93d9aea4ec0eb2"
+        data-srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/bac8be28-2eb0-4b8e-860b-9e4f30618edc_rw_600.png?h=8a7b9e1c1281580b727b5030cc8ca43f 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/bac8be28-2eb0-4b8e-860b-9e4f30618edc_rw_1200.png?h=153d03bf6b91931156066076fcc15aad 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/bac8be28-2eb0-4b8e-860b-9e4f30618edc_rw_1920.png?h=f653e72a12fd903e8d93d9aea4ec0eb2 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:185.83333333333%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container" data-flex-grow="385.9793814433" style="width:385.9793814433px; flex-grow:385.9793814433;" data-width="1920" data-height="1293">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5862dcef-39a5-44e7-8d63-5aebd7509a3c_rw_1920.png?h=60d92fd3c8eb25fd0dcc8c6ab5d9d5cf" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5862dcef-39a5-44e7-8d63-5aebd7509a3c_rw_600.png?h=13c7d86017682e5e7a55a60c508dfc10 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5862dcef-39a5-44e7-8d63-5aebd7509a3c_rw_1200.png?h=7218ec8e3e8abe2b0b3a1ad7c9f345b4 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5862dcef-39a5-44e7-8d63-5aebd7509a3c_rw_1920.png?h=60d92fd3c8eb25fd0dcc8c6ab5d9d5cf 1920w,"  sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img
+        class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        
+        data-src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5862dcef-39a5-44e7-8d63-5aebd7509a3c_rw_1920.png?h=60d92fd3c8eb25fd0dcc8c6ab5d9d5cf"
+        data-srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5862dcef-39a5-44e7-8d63-5aebd7509a3c_rw_600.png?h=13c7d86017682e5e7a55a60c508dfc10 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5862dcef-39a5-44e7-8d63-5aebd7509a3c_rw_1200.png?h=7218ec8e3e8abe2b0b3a1ad7c9f345b4 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/5862dcef-39a5-44e7-8d63-5aebd7509a3c_rw_1920.png?h=60d92fd3c8eb25fd0dcc8c6ab5d9d5cf 1920w,"
+      >
+      <span class="grid__item-filler" style="padding-bottom:67.361111111111%;"></span>
+    </div>
+    <div class="js-grid-spacer"></div>
+  </div>
+</div>
+
+              
+              
+          </div>
+        </div>
+      </div>
+    </section>
+          <section class="other-projects" data-context="page.page.other_pages" data-hover-hint="otherPages">
+            <div class="title-wrapper">
+              <div class="title-container">
+                  <h3 class="other-projects-title preserve-whitespace">You may also like</h3>
+              </div>
+            </div>
+            <div class="project-covers">
+                  <a class="project-cover js-project-cover-touch hold-space" href="ogun.html" data-context="pages" data-identity="id:p603c192cbd0d47f7fe57aa9e30249cbdaee22b8fd77388e9e4c33">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/b1f38d6e-e243-4736-b322-a2983ca06d40_rwc_367x0x1188x891x32d974.png?h=63f76c0eac9e7a298e6dc0595d1adb12"
+              data-src="../pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/b1f38d6e-e243-4736-b322-a2983ca06d40_rwc_367x0x1188x891x11883d9d.png?h=02c767073fd510bf517f5e95cddf3fd8"
+              data-srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/b1f38d6e-e243-4736-b322-a2983ca06d40_rwc_367x0x1188x891x640.png?h=978cd973c2ada07201926831a055b488 640w, https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/b1f38d6e-e243-4736-b322-a2983ca06d40_rwc_367x0x1188x891x1280.png?h=a12e07809fcb433fad688632cff35b6f 1280w, https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/b1f38d6e-e243-4736-b322-a2983ca06d40_rwc_367x0x1188x891x1366.png?h=b3f5f7a805698854fc6399a0bd8d4a86 1366w, https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/b1f38d6e-e243-4736-b322-a2983ca06d40_rwc_367x0x1188x891x1920.png?h=e24226c68fd295dcc8975d4a7bfc9641 1920w, https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/b1f38d6e-e243-4736-b322-a2983ca06d40_rwc_367x0x1188x891x1188.png?h=02c767073fd510bf517f5e95cddf3fd8 2560w, https://pro2-bar-s3-cdn-cf.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/b1f38d6e-e243-4736-b322-a2983ca06d40_rwc_367x0x1188x891x1188.png?h=02c767073fd510bf517f5e95cddf3fd8 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1500px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Ogun Web – A better way to manage construction projects</div>
+                              <div class="date">2021</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="street-crime.html" data-context="pages" data-identity="id:p60250d49402f3d2358a863865e6e3b69c576baf77fd6d67573a44">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/538d81c5-b7ae-40c5-a706-5dce506049ab_rwc_164x0x2580x1935x3245df.png?h=8fc388d870016180f72f5162234444d1"
+              data-src="../pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/538d81c5-b7ae-40c5-a706-5dce506049ab_rwc_164x0x2580x1935x25803bee.png?h=5afd0c15bbd2c06d50ebc38c4a5f64c3"
+              data-srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/538d81c5-b7ae-40c5-a706-5dce506049ab_rwc_164x0x2580x1935x640.png?h=3fde630fa7b13dae4ffb6e374d2b7f82 640w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/538d81c5-b7ae-40c5-a706-5dce506049ab_rwc_164x0x2580x1935x1280.png?h=04733ca8fe407f9dc30b382231d51bc0 1280w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/538d81c5-b7ae-40c5-a706-5dce506049ab_rwc_164x0x2580x1935x1366.png?h=46c9aeca8ee6c6dcd281752dea1f8d09 1366w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/538d81c5-b7ae-40c5-a706-5dce506049ab_rwc_164x0x2580x1935x1920.png?h=db115ed77c7212d8a225ecf37adf08a5 1920w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/538d81c5-b7ae-40c5-a706-5dce506049ab_rwc_164x0x2580x1935x2560.png?h=2bfd6e50c2cb0574d5ab81e761fc6be7 2560w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/538d81c5-b7ae-40c5-a706-5dce506049ab_rwc_164x0x2580x1935x2580.png?h=5afd0c15bbd2c06d50ebc38c4a5f64c3 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1500px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Massive Role Playing game took a new look</div>
+                              <div class="date">2020</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="kudi.html" data-context="pages" data-identity="id:p6024f66e91638daca8dffadb82dc0d9b2537ee268064f62b8a29d">
+                    <div class="cover-content-container">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/3cb071e5-b19a-420e-ac8c-1f81dc906960_rwc_0x0x2450x1837x32a88e.png?h=70b7bd09395a1899722c611744487d5e"
+              data-src="../pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/3cb071e5-b19a-420e-ac8c-1f81dc906960_rwc_0x0x2450x1837x2450ea0d.png?h=6a5215dc1f2f547ebaa0b8f68a6d401a"
+              data-srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/3cb071e5-b19a-420e-ac8c-1f81dc906960_rwc_0x0x2450x1837x640.png?h=93672b677279ce44ab8c94d837a83511 640w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/3cb071e5-b19a-420e-ac8c-1f81dc906960_rwc_0x0x2450x1837x1280.png?h=60ee68ad52e4ba2a13bf01538b170fb7 1280w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/3cb071e5-b19a-420e-ac8c-1f81dc906960_rwc_0x0x2450x1837x1366.png?h=33d56f4bdad81edcfbe30229619c1bfd 1366w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/3cb071e5-b19a-420e-ac8c-1f81dc906960_rwc_0x0x2450x1837x1920.png?h=cf218412a44a3440318955a556c9c848 1920w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/3cb071e5-b19a-420e-ac8c-1f81dc906960_rwc_0x0x2450x1837x2450.png?h=6a5215dc1f2f547ebaa0b8f68a6d401a 2560w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/9e21c172-a0d6-4948-82c4-4c68e1f79e5e/3cb071e5-b19a-420e-ac8c-1f81dc906960_rwc_0x0x2450x1837x2450.png?h=6a5215dc1f2f547ebaa0b8f68a6d401a 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1500px / 3)"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="details-wrap">
+                        <div class="details">
+                          <div class="details-inner">
+                              <div class="title preserve-whitespace">Kudi web refresh! 😊</div>
+                              <div class="date">2020</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+          </section>
+        <section class="back-to-top" data-hover-hint="backToTop">
+          <a href="#"><span class="arrow">&uarr;</span><span class="preserve-whitespace">Back to Top</span></a>
+        </section>
+        <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+          <g>
+            <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+              c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+              c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+              c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+              c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+              c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+              c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"/>
+          </g>
+          </svg>
+        </a>
+  </div>
+              <footer class="site-footer" data-hover-hint="footer">
+                <div class="footer-text">
+                  email: soobadina@gmail.com
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":26,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p6091365287bc413e49ab4278d10f93d5192c5ac254a97d213168b","theme":{"name":"marta\/marina"},"pageTransition":true,"linkTransition":true,"disableDownload":false,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false}};</script>
+  <script type="text/javascript" src="site/translationscb21?cb="></script>
+  <script type="text/javascript" src="dist/js/maincb21.js?cb="></script>
+
+<!-- Mirrored from soobadina.co.uk/peer-group by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Jun 2021 17:58:54 GMT -->
+</html>
