@@ -81,7 +81,7 @@ html.lightbox-enabled body {
   overflow: hidden; }
 
 html.lightbox-zoomed .lightbox-content {
-  cursor: zoom-out;
+  /* cursor: zoom-out; */
   overflow: auto; }
   html.lightbox-zoomed .lightbox-content.zoomable-x {
     justify-content: flex-start; }
@@ -97,7 +97,8 @@ html.lightbox-zoomed #lightbox-img-wrap .lightbox-extra {
 
 .lightbox-link,
 .lightbox-content.zoomable {
-  cursor: zoom-in; }
+  /* cursor: zoom-in; */
+ }
 
 #lightbox-wrap .lightbox-contents {
   -moz-user-select: none;
